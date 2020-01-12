@@ -13,7 +13,6 @@ Vue.prototype.$create = create;
 new Vue({
     //Vue.prototype.$router = router  为了全局用
     router,
-
     store,
     render: h => h(App)
 }).$mount('#app');
