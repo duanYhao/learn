@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 
+//1.应用插件
 Vue.use(VueRouter);
 
 const routes = [
@@ -20,6 +21,7 @@ const routes = [
     }
 ];
 
+//2.创建实例
 const router = new VueRouter({
     routes
 });

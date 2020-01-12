@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint --fixed"
+    "lint": "vue-cli-service lint --fix"
   },
   "dependencies": {
     "async-validator": "^3.2.3",

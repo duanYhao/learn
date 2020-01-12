@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import App from './App.vue';
-import router from './router';
+import router from './krouter';
 import create from './utils/create.js';
 
 Vue.use(create);
@@ -8,7 +8,8 @@ Vue.use(create);
 Vue.config.productionTip = false;
 
 Vue.prototype.$create = create;
+//3.挂载router实例，why?
 new Vue({
-    router,
+    router,//Vue.prototype.$router = router  为了全局用
     render: h => h(App)
 }).$mount('#app');
