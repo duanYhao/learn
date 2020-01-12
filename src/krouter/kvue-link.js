@@ -1,7 +1,7 @@
 export default {
     props:{
         to:{
-            type:String,
+            type:String,//或者是对象
             required:true
         },
     },

@@ -13,6 +13,15 @@ class KVueRouter{
         //利用Vue提供的defineReactive使current响应化
         //这样将来current变化的时候，依赖的组件会重新render
         Vue.util.defineReactive(this,'current','/');
+
+        //或者通过new Vue()创建响应数据,通过this.app.current访问
+        // this.app = new Vue({
+        //     data(){
+        //         return {
+        //             current:'/'
+        //         };
+        //     }
+        // });
     
         //监控URL变化
         window.addEventListener('hashchange',this.onhashChange.bind(this));
